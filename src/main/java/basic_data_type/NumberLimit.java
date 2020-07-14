@@ -43,8 +43,8 @@ public class NumberLimit {
         //char
         System.out.println("包装类: java.lang.Character");
         System.out.println("基本类型char:" + Character.SIZE);
-        System.out.println("char最小值：" + Character.MIN_VALUE);
-        System.out.println("char最大值：" + Character.MAX_VALUE);
+        System.out.println("char最小值：" + (int)Character.MIN_VALUE);
+        System.out.println("char最大值：" + (int)Character.MAX_VALUE);
         //boolean
         System.out.println("包装类: java.lang.Boolean");
         System.out.println("boolean真：" + Boolean.TRUE);
