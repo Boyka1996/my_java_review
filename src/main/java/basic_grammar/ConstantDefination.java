@@ -1,4 +1,4 @@
-package basic_gramma;
+package basic_grammar;
 
 /**
  * Created with IntelliJ IDEA.
