@@ -23,4 +23,8 @@ package string;
  * 比较两个字符串的大小compareTo()方法和compareToIgnoreCase()，返回两个字符串的差值
  * 计算哈希值hashCode()
  * 转成数组toCharArray()
+ * StringBuilder和StringBuffer类类在字符串操作时不生成新的对象，性能上优于String
+ * StringBuilder是非线程安全的，但是效率更高，StringBuffer是线程安全的
+ * StringBuilder实现了Serializable和CharSequence接口，最常用的是append()和insert()方法
+ * StringBuffer中的方法跟StringBuilder中方法一样
  */

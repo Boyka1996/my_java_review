@@ -1,5 +1,3 @@
-package language_structure;
-
 /**
  * Created with IntelliJ IDEA.
  * Description:
