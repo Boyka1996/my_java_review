@@ -13,34 +13,34 @@ import java.util.regex.Pattern;
  */
 public class PatternExample {
     public static void main(String[] args) {
-        String str = "今日头条www.01baidu.com";
-        String regex = "[a-z](.*)(\\.)";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(str);
-        int groupCount = matcher.groupCount();
-        System.out.println(groupCount);
-        if (matcher.find()) {
-            for (int i = 0; i < groupCount; ++i) {
-                System.out.println(matcher.group(i));
-            }
-        } else {
-            System.out.println("Not found!");
-        }
+//        String str = "今日头条www.01baidu.com";
+//        String regex = "[a-z](.*)(\\.)";
+//        Pattern pattern = Pattern.compile(regex);
+//        Matcher matcher = pattern.matcher(str);
+//        int groupCount = matcher.groupCount();
+//        System.out.println(groupCount);
+//        if (matcher.find()) {
+//            for (int i = 0; i < groupCount; ++i) {
+//                System.out.println(matcher.group(i));
+//            }
+//        } else {
+//            System.out.println("Not found!");
+//        }
+//
+//        str = "<This><is><an><example>";
+//        regex = "<.+>";
+//        matcher = Pattern.compile(regex).matcher(str);
+//        if (matcher.find()) {
+//            System.out.println(matcher.group());
+//
+//        } else {
+//            System.out.println("Not found!");
+//        }
 
-        str = "<This><is><an><example>";
-        regex = "<.+>";
-        matcher = Pattern.compile(regex).matcher(str);
-        if (matcher.find()) {
-            System.out.println(matcher.group());
 
-        } else {
-            System.out.println("Not found!");
-        }
-
-
-        str = "eating apple seeing paper watching movie";
-        regex = "(\b\\w+?)ing";
-        matcher = Pattern.compile(regex).matcher(str);
+        String str = "eating apple seeing paper watching movie";
+        String regex = "(\b\\w*?)(?=ing)";
+        Matcher matcher = Pattern.compile(regex).matcher(str);
         if (matcher.find()) {
             System.out.println(matcher.group());
 
